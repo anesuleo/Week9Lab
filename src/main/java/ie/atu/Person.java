@@ -6,10 +6,16 @@ public class Person {
     private String address;
     private String phone;
 
-    public Person(String name, String address, String phone) {
+    public Person() {
         this.name = "";
         this.address = "";
         this.phone = "";
+    }
+
+    public Person(String name, String address, String phone) {
+        this.name = name;
+        this.address = address;
+        this.phone = phone;
     }
     public String getName() {
         return name;
@@ -37,8 +43,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
+        return "name='" + name + '\'' +
                 ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +
                 '}';
